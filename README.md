@@ -42,3 +42,18 @@ A web application to create professional resumes with live preview.
 
 ## Git Workflow
 Feature branches + Pull Requests + CI/CD
+
+## ⚙️ CI/CD Pipeline
+
+This project uses GitHub Actions for Continuous Integration and Netlify for Continuous Deployment.
+
+### Continuous Integration (CI)
+- Triggered on every push and pull request
+- Automatically checks the project build
+- Ensures code stability before merging
+
+### Continuous Deployment (CD)
+- The project is deployed using Netlify
+- Deployment happens automatically after merging to the main branch
+- Provides a live URL for the application
+
