@@ -38,6 +38,12 @@ A web application to create professional resumes with live preview.
   - Configured deployment on Netlify/Vercel
   - Created and maintained project documentation
   - Reviewed and merged pull requests
+ 
+
+## Live Preview
+https://smartresumesite.netlify.app/ 
+
+---
 
 
 ## Git Workflow
