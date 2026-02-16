@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart Resume Builder</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Smart Resume Builder</h1>
+
+      <div class="builder">
+        <!-- Left side: Form -->
+        <form id="resumeForm">
+          <h2>Personal Details</h2>
+          <input type="text" id="fullName" placeholder="Full Name" />
+          <input type="email" id="email" placeholder="Email" />
+          <input type="text" id="phone" placeholder="Phone" />
+          <input type="text" id="address" placeholder="Address" />
+          <input type="text" id="linkedin" placeholder="LinkedIn / GitHub" />
+
+          <h2>Education</h2>
+          <input type="text" id="degree" placeholder="Degree" />
+          <input type="text" id="institution" placeholder="Institution" />
+          <input type="text" id="year" placeholder="Year" />
+
+          <h2>Skills</h2>
+          <input type="text" id="skills" placeholder="Comma separated skills" />
+
+          <h2>Experience</h2>
+          <input type="text" id="jobTitle" placeholder="Job Title" />
+          <input type="text" id="company" placeholder="Company" />
+          <textarea id="jobDesc" placeholder="Description"></textarea>
+
+          <h2>Projects</h2>
+          <input type="text" id="projectName" placeholder="Project Name" />
+
+          <h2>Resume Template</h2>
+          <button type="button" id="template1Btn">Template 1 (Simple)</button>
+          <button type="button" id="template2Btn">Template 2 (Modern)</button>
+
+          <button type="button" id="downloadBtn">Download PDF</button>
+        </form>
+
+        <!-- Right side: Resume Preview -->
+        <div class="preview">
+          <h2>Live Preview</h2>
+          <div id="resumePreview" class="template1">
+            <!-- Resume content will appear here -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="preview.js"></script>
+  </body>
+</html>
