@@ -4,7 +4,7 @@
 ## Project Description
 A web application to create professional resumes with live preview.
 
-## 🎯 Project Objectives
+## Project Objectives
 - Provide an easy way to create professional resumes
 - Demonstrate team collaboration using Git & GitHub
 - Implement CI/CD using GitHub Actions
