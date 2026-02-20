@@ -60,7 +60,7 @@ Smart Resume/
 
 
 
-## Team Members
+# Team Members
 - Student 1 – Frontend  ( ITBNM-2313-0012 ,     N.H.L Chathurangi de silva )
   - Designed and implemented resume input forms
   - Developed live resume preview functionality
@@ -76,10 +76,11 @@ Smart Resume/
   - Configured deployment on Netlify/Vercel
   - Created and maintained project documentation
   - Reviewed and merged pull requests
+  - Build DOCKER files and pull requests
 
 ---
 
-## Live Preview
+# Live Preview
 https://smartresumesite.netlify.app/ 
 
 ---
@@ -98,7 +99,7 @@ https://smartresumesite.netlify.app/
 ## Git Workflow
 Feature branches + Pull Requests + CI/CD
 
-## ⚙️ CI/CD Pipeline
+# ⚙️ CI/CD Pipeline
 
 This project uses GitHub Actions for Continuous Integration and Netlify for Continuous Deployment.
 
@@ -134,7 +135,7 @@ Process:
 
 ---
 
-## Docker Configuration
+# Docker Configuration
 This project is containerized using Docker and served with Nginx
 ```text
 FROM nginx:alpine
@@ -149,7 +150,7 @@ EXPOSE 80
 
 CMD ["nginx", "-g", "daemon off;"]
 ```
-# How to Run the Project Using Docker
+## How to Run the Project Using Docker
 Step 1 — Build Docker Image
 Open terminal inside project folder:
 ```
@@ -164,7 +165,7 @@ Step 3 — Open in Browser
 http://localhost:8080
 ```
 ---
-## DevOps Concepts Demonstrated
+# DevOps Concepts Demonstrated
 This project demonstrates key DevOps principles:
 - Version Control (Git)
 - Infrastructure as Code (Dockerfile)
