@@ -49,7 +49,7 @@ https://smartresumesite.netlify.app/
 ## Git Workflow
 Feature branches + Pull Requests + CI/CD
 
-## ⚙️ CI/CD Pipeline
+## CI/CD Pipeline
 
 This project uses GitHub Actions for Continuous Integration and Netlify for Continuous Deployment.
 
@@ -57,9 +57,40 @@ This project uses GitHub Actions for Continuous Integration and Netlify for Cont
 - Triggered on every push and pull request
 - Automatically checks the project build
 - Ensures code stability before merging
+  
+Workflow file location: .github/workflows/ci.yml
+
+CI is triggered on:
+
+- Push to `develop`
+- Pull requests to `develop` or `main`
+
+CI Pipeline Steps:
+1. Checkout repository
+2. Setup Node environment
+3. Run build validation
+4. Confirm successful execution
+
+Purpose:
+- Ensure code stability
+- Prevent broken builds
+- Enforce quality control
+
+---
 
 ### Continuous Deployment (CD)
-- The project is deployed using Netlify
-- Deployment happens automatically after merging to the main branch
-- Provides a live URL for the application
+Deployment Platform: **Netlify**
+
+Deployment Trigger:
+- Automatic deployment on merge to `main`
+
+Process:
+1. Developer merges PR to `main`
+2. Netlify detects change
+3. Build starts automatically
+4. Live site updates
+
+---
+
+  
 
