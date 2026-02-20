@@ -23,7 +23,7 @@ A web application to create professional resumes with live preview.
 - Netlify/Vercel
 
 ## Team Members
-- Student 1 – Frontend  ( ITBNM-2313-0012 ,       N.H.L. CHATHURANGI DE SILVA )
+- Student 1 – Frontend  ( ITBNM-2313-0012 ,       N.H.L. Chathurangi de silva )
   - Designed and implemented resume input forms
   - Developed live resume preview functionality
   - Created multiple resume templates
@@ -31,7 +31,7 @@ A web application to create professional resumes with live preview.
   - Handled UI styling and responsiveness
   - Managed frontend feature branches
 
-- Student 2 – DevOps    ( ITBNM-2313-0010  ,       D.V. LASHINI CHAMODI )
+- Student 2 – DevOps    ( ITBNM-2313-0010  ,       D.V. Lashini Chamodi )
   - Set up GitHub repository and branch rules
   - Managed Git workflow and pull requests
   - Implemented CI pipeline using GitHub Actions
