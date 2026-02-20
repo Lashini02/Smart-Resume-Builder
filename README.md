@@ -45,6 +45,16 @@ https://smartresumesite.netlify.app/
 
 ---
 
+### Branch Protection Rules
+
+- `main` branch is protected
+- Direct pushes to `main` are disabled
+- Pull Request required before merging
+- Minimum 1 approval required
+
+
+---
+
 
 ## Git Workflow
 Feature branches + Pull Requests + CI/CD
