@@ -1,0 +1,26 @@
+# Node modules (if added later)
+node_modules/
+
+# Logs
+*.log
+
+# Environment files
+.env
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# VS Code settings
+.vscode/
+
+# Docker files (optional if you don’t want to push local configs)
+docker-compose.override.yml
+
+# Build artifacts
+dist/
+build/
+
+# Temporary files
+*.tmp
+*.swp
