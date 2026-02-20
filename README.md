@@ -58,7 +58,7 @@ This project uses GitHub Actions for Continuous Integration and Netlify for Cont
 - Automatically checks the project build
 - Ensures code stability before merging
   
-Workflow file location: .github/workflows/ci.yml
+Workflow file location:  `.github/workflows/ci.yml`
 
 CI is triggered on:
 
