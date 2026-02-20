@@ -99,7 +99,7 @@ https://smartresumesite.netlify.app/
 ## Git Workflow
 Feature branches + Pull Requests + CI/CD
 
-# ⚙️ CI/CD Pipeline
+# CI/CD Pipeline
 
 This project uses GitHub Actions for Continuous Integration and Netlify for Continuous Deployment.
 
