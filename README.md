@@ -3,7 +3,38 @@
 
 ## Project Description
 A web application to create professional resumes with live preview.
+Smart Resume Builder is a lightweight web application that allows users to generate a professional resume dynamically using a simple form interface.
 
+This project demonstrates:
+
+- Frontend web development
+
+- Docker containerization
+
+- Nginx web server deployment
+
+- Git version control
+
+- GitHub repository management
+
+- CI automation using GitHub Actions
+
+- Static site deployment using GitHub Pages
+
+## Project Structure
+```
+Smart Resume/
+│
+├── .github/workflows/
+│   └── ci.yaml
+├── Dockerfile
+├── docker-compose.yml
+├── .dockerignore
+├── index.html
+├── style.css
+├── preview.js
+└── README.md
+```
 ## Project Objectives
 - Provide an easy way to create professional resumes
 - Demonstrate team collaboration using Git & GitHub
@@ -17,10 +48,17 @@ A web application to create professional resumes with live preview.
 - PDF download
 - Local storage
 
-## Tech Stack
-- HTML, CSS, JavaScript
+## Technologies Used 
+- HTML5
+- CSS3
+- JavaScript
+- Docker
+- Nginx (Alpine Linux)
+- Git & GitHub
 - GitHub Actions
-- Netlify/Vercel
+- GitHub Pages
+
+
 
 ## Team Members
 - Student 1 – Frontend  ( ITBNM-2313-0012 ,       N.H.L. Chathurangi de silva )
@@ -38,7 +76,8 @@ A web application to create professional resumes with live preview.
   - Configured deployment on Netlify/Vercel
   - Created and maintained project documentation
   - Reviewed and merged pull requests
- 
+
+---
 
 ## Live Preview
 https://smartresumesite.netlify.app/ 
@@ -75,3 +114,41 @@ Workflow file location: `.github/workflows/ci.yml`
 - Deployment happens automatically after merging to the main branch
 - Provides a live URL for the application
 
+## Docker Configuration
+This project is containerized using Docker and served with Nginx
+```text
+FROM nginx:alpine
+
+RUN rm -rf /usr/share/nginx/html/*
+
+COPY index.html /usr/share/nginx/html/
+COPY style.css /usr/share/nginx/html/
+COPY preview.js /usr/share/nginx/html/
+
+EXPOSE 80
+
+CMD ["nginx", "-g", "daemon off;"]
+```
+# How to Run the Project Using Docker
+Step 1 — Build Docker Image
+Open terminal inside project folder:
+```
+docker build -t smart-resume-builder .
+```
+Step 2 — Run Docker Container
+```
+docker run -p 8080:80 smart-resume-builder
+```
+Step 3 — Open in Browser
+```
+http://localhost:8080
+```
+---
+## DevOps Concepts Demonstrated
+This project demonstrates key DevOps principles:
+- Version Control (Git)
+- Infrastructure as Code (Dockerfile)
+- Continuous Integration (GitHub Actions)
+- Containerization (Docker)
+- Web Server Deployment (Nginx)
+- Automated Build Verification
