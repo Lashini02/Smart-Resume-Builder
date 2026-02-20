@@ -4,7 +4,7 @@
 ## Project Description
 A web application to create professional resumes with live preview.
 
-## 🎯 Project Objectives
+## Project Objectives
 - Provide an easy way to create professional resumes
 - Demonstrate team collaboration using Git & GitHub
 - Implement CI/CD using GitHub Actions
@@ -23,7 +23,7 @@ A web application to create professional resumes with live preview.
 - Netlify/Vercel
 
 ## Team Members
-- Student 1 – Frontend  ( ITBNM-2313-0012 ,       N.H.L. CHATHURANGI DE SILVA )
+- Student 1 – Frontend  ( ITBNM-2313-0012 ,     N.H.L Chathurangi de silva )
   - Designed and implemented resume input forms
   - Developed live resume preview functionality
   - Created multiple resume templates
@@ -31,7 +31,7 @@ A web application to create professional resumes with live preview.
   - Handled UI styling and responsiveness
   - Managed frontend feature branches
 
-- Student 2 – DevOps    ( ITBNM-2313-0010  ,       D.V. LASHINI CHAMODI )
+- Student 2 – DevOps    ( ITBNM-2313-0010  ,       D.V. Lashini chamodi )
   - Set up GitHub repository and branch rules
   - Managed Git workflow and pull requests
   - Implemented CI pipeline using GitHub Actions
@@ -45,6 +45,16 @@ https://smartresumesite.netlify.app/
 
 ---
 
+### Branch Protection Rules
+
+- `main` branch is protected
+- Direct pushes to `main` are disabled
+- Pull Request required before merging
+- Minimum 1 approval required
+
+
+---
+
 
 ## Git Workflow
 Feature branches + Pull Requests + CI/CD
@@ -53,13 +63,35 @@ Feature branches + Pull Requests + CI/CD
 
 This project uses GitHub Actions for Continuous Integration and Netlify for Continuous Deployment.
 
-### Continuous Integration (CI)
-- Triggered on every push and pull request
-- Automatically checks the project build
-- Ensures code stability before merging
+Workflow file location: `.github/workflows/ci.yml`
 
+### Continuous Integration (CI)
+- Push to `develop`
+- Pull requests to `develop` or `main`
+
+CI Pipeline Steps:
+1. Checkout repository
+2. Setup Node environment
+3. Run build validation
+4. Confirm successful execution
+
+Purpose:
+- Ensure code stability
+- Prevent broken builds
+- Enforce quality control
+  
 ### Continuous Deployment (CD)
-- The project is deployed using Netlify
-- Deployment happens automatically after merging to the main branch
-- Provides a live URL for the application
+
+Deployment Platform: **Netlify**
+
+Deployment Trigger:
+- Automatic deployment on merge to `main`
+
+Process:
+1. Developer merges PR to `main`
+2. Netlify detects change
+3. Build starts automatically
+4. Live site updates
+
+---
 
