@@ -30,6 +30,7 @@ Smart Resume/
 ├── Dockerfile
 ├── docker-compose.yml
 ├── .dockerignore
+├── .gitignore
 ├── index.html
 ├── style.css
 ├── preview.js
