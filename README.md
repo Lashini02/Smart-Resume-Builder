@@ -85,7 +85,13 @@ Smart Resume/
 https://smartresumesite.netlify.app/ 
 
 ---
+# Live Demo
+The Smart Resume Builder application is deployed using GitHub Pages.
 
+You can access the live website here:
+https://lashini02.github.io/Smart-Resume-Builder/
+
+---
 ### Branch Protection Rules
 
 - `main` branch is protected
