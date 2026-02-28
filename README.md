@@ -79,10 +79,7 @@ Smart Resume/
   - Reviewed and merged pull requests
   - Build DOCKER files and pull requests
 
----
 
-# Live Preview
-https://smartresumesite.netlify.app/ 
 
 ---
 # Live Demo
